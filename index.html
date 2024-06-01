@@ -27,3 +27,43 @@
     </audio>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Música</title>
+    <style>
+        #play-button {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a mi página web</h1>
+    <button id="play-button" onclick="playMusic()">Reproducir Música</button>
+    <audio id="background-music" loop>
+        <source src="Musica para ella.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <script>
+        var audio = document.getElementById("background-music");
+        var playButton = document.getElementById("play-button");
+
+        document.addEventListener('DOMContentLoaded', function() {
+            if (audio.paused) {
+                playButton.style.display = 'block';
+            } else {
+                playButton.style.display = 'none';
+            }
+        });
+
+        function playMusic() {
+            audio.play();
+            playButton.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
