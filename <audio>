@@ -8,8 +8,8 @@
 <body>
     <h1>Bienvenido a mi página web</h1>
     <audio controls>
-        <source src="ruta/a/tu/musica.mp3" type="audio/mpeg">
-        <source src="ruta/a/tu/musica.ogg" type="audio/ogg">
+        <source src="https://www.youtube.com/watch?v=ZtCOsQqrBrs&list=RDGMEMQ1dJ7wXfLlqCjwV0xfSNbA&index=14" type="audio/mpeg">
+        <source src="https://www.youtube.com/watch?v=ZtCOsQqrBrs&list=RDGMEMQ1dJ7wXfLlqCjwV0xfSNbA&index=14" type="audio/ogg">
         Tu navegador no soporta la reproducción de audio.
     </audio>
 </body>
